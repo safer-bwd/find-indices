@@ -11,7 +11,7 @@ import findIndex from 'lodash.findindex';
  * import findIndexes from 'find-indices';
  * const coll = [{ v: 0 }, { v: 2 }, { v: 0 }, { v: 3 }, { v: 3 }];
  * findIndexes(coll, ({ v }) => v > 1); // [1, 3, 4]
- * findIndexes(coll, { v: 1 }); // [0, 2]
+ * findIndexes(coll, { v: 0 }); // [0, 2]
  * findIndexes(coll, ['v', 3]); // [3, 4]
  * findIndexes(coll, 'v'); // [1, 3, 4]
  * */
