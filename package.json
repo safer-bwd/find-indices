@@ -1,7 +1,7 @@
 {
   "name": "find-indices",
   "version": "0.1.0",
-  "description": "",
+  "description": "Returns indexes of elements in an array that satisfy predicate",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
