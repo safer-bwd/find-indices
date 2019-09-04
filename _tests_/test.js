@@ -14,7 +14,7 @@ it('should work', async () => {
   expect(findIndexes(users, u => u.age > 30)).toEqual([1, 4]);
 });
 
-it('should work with an iteratee shorthand', async () => {
+it('should work with `lodash` iteratee shorthand', async () => {
   expect(findIndexes(users, { 'name': 'Fred', 'active': true })).toEqual([1]);
   expect(findIndexes(users, ['age', 29])).toEqual([0, 3]);
   expect(findIndexes(users, 'active')).toEqual([1, 3, 4]);
