@@ -20,8 +20,8 @@ export default (array, predicate, fromIndex = 0, limit = -1) => {
       return indexes;
     }
 
-    return search(found + 1, indexes)
-  }
+    return search(found + 1, indexes);
+  };
 
   return search(fromIndex, []);
 };
