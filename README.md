@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/safer-bwd/find-indices.svg?branch=master)](https://travis-ci.com/safer-bwd/find-indices)
 
-Returns indexes of elements in an array that satisfy a predicate or a [lodash iteratee shorthands](https://lodash.com/docs#iteratee).
+Returns indexes of elements in an array that satisfy a predicate or [lodash iteratee shorthands](https://lodash.com/docs#iteratee).
 
 Like [lodash.findindex](https://lodash.com/docs#findIndex), but returns all indexes instead of the first one.
 
@@ -29,7 +29,7 @@ Like [lodash.findindex](https://lodash.com/docs#findIndex), but returns all inde
 import findIndexes from 'find-indices';
 const coll = [{ v: 0 }, { v: 2 }, { v: 0 }, { v: 3 }, { v: 3 }];
 findIndexes(coll, ({ v }) => v > 1); // [1, 3, 4]
-findIndexes(coll, { v: 1 }); // [0, 2]
+findIndexes(coll, { v: 0 }); // [0, 2]
 findIndexes(coll, ['v', 3]); // [3, 4]
 findIndexes(coll, 'v'); // [1, 3, 4]
 ```
