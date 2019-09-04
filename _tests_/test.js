@@ -21,6 +21,7 @@ it('should work with `lodash` iteratee shorthand', async () => {
 });
 
 it('should work with a positive `fromIndex`', async () => {
+  expect(findIndexes(users, () => true, 5)).toEqual([]);
   expect(findIndexes(users, u => u.name === 'Jon', 1)).toEqual([3]);
   expect(findIndexes(users, 'active', 2)).toEqual([3, 4]);
 });
