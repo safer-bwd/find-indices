@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.com/safer-bwd/find-indices.svg?branch=master)](https://travis-ci.com/safer-bwd/find-indices)
 
 Returns indexes of elements in an array that satisfy predicate or [lodash iteratee shorthands](https://lodash.com/docs#iteratee).
+
 Like [lodash.findindex](https://lodash.com/docs#findIndex), but returns all indexes instead of the first one.
 
 ## Install
