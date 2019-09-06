@@ -8,7 +8,9 @@ Like [lodash.findindex](https://lodash.com/docs#findIndex), but returns all inde
 
 ## Install
 
-    npm install find-indices --save
+```sh
+npm install find-indices --save
+```
 
 ## API
 
@@ -27,6 +29,7 @@ Like [lodash.findindex](https://lodash.com/docs#findIndex), but returns all inde
 
 ```javascript
 import findIndexes from 'find-indices';
+
 const coll = [{ v: 0 }, { v: 2 }, { v: 0 }, { v: 3 }, { v: 3 }];
 findIndexes(coll, ({ v }) => v > 1); // [1, 3, 4]
 findIndexes(coll, { v: 0 }); // [0, 2]

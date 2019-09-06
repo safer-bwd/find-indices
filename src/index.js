@@ -1,7 +1,7 @@
 import findIndex from 'lodash.findindex';
 
 /**
- * @name find-indices
+ * @function find-indices
  * @param {Array} array The array to search
  * @param {Function|Array|Object|string} predicate The function invoked per iteration
  * @param {number} [fromIndex=0] The index to search from
@@ -9,12 +9,13 @@ import findIndex from 'lodash.findindex';
  * @return {Array<number>} The array of found indexes
  * @example
  * import findIndexes from 'find-indices';
+ *
  * const coll = [{ v: 0 }, { v: 2 }, { v: 0 }, { v: 3 }, { v: 3 }];
  * findIndexes(coll, ({ v }) => v > 1); // [1, 3, 4]
  * findIndexes(coll, { v: 0 }); // [0, 2]
  * findIndexes(coll, ['v', 3]); // [3, 4]
  * findIndexes(coll, 'v'); // [1, 3, 4]
- * */
+ */
 export default (array, predicate, fromIndex = 0, limit = -1) => {
   if (array.length === 0) {
     return [];
